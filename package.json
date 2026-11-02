@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/s-s-dev-commits/typescript-for-javascript-developers#readme",
   "devDependencies": {
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
 }
