@@ -2,8 +2,9 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    // "rootDir": "./src",
-    // "outDir": "./dist",
+    "rootDir": "./src",
+    // *.d.ts, *.d.ts.map, *.js, *.js.mapの出力先
+    "outDir": "./dist",
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
@@ -33,12 +34,17 @@
     // "noPropertyAccessFromIndexSignature": true,
 
     // Recommended Options
+    // 厳格モード
     "strict": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
+    // importのチェックエラー対策
+    // ESMとCJSの差異があるため
+    "verbatimModuleSyntax": false,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
+
+    "noEmitOnError": true,
   }
 }
