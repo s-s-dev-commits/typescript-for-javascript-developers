@@ -24,6 +24,12 @@
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
+    // trueだと、例えば、property?に対し、undefinedが許容されなくなる
+    // 対し、strictNullChecksがfalseだと、age: numberに対し、null、undefinedが許容される
+    // ->設定が矛盾する
+    // ->src\nullable-types.tsのテスト用に、strictNullChecksをfalseにしている
+    // "exactOptionalPropertyTypes": false,
+    // "strictNullChecks": false,
 
     // Style Options
     // "noImplicitReturns": true,
